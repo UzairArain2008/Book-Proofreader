@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  --mark-caret: "\2038"; /* proofreading caret, used as a signature accent */
+}
+
+html,
+body {
+  background-color: #f7f8fa;
+  color: #1b2430;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: "Source Serif 4", Georgia, serif;
+}
+
+.font-mono-data {
+  font-family: "IBM Plex Mono", monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Signature motif: a small editorial proofreading caret used before section labels. */
+.mark::before {
+  content: "\2038";
+  display: inline-block;
+  margin-right: 0.4em;
+  color: #b8752a;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+::selection {
+  background-color: #2a5c55;
+  color: #f7f8fa;
+}
+
+:focus-visible {
+  outline: 2px solid #2a5c55;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

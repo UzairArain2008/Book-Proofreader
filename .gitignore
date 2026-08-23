@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Env
+.env
+
+# Node
+node_modules/
+.next/
+out/
+
+# Storage
+backend/storage/uploads/*
+backend/storage/pages/*
+backend/storage/reports/*
+!backend/storage/uploads/.gitkeep
+!backend/storage/pages/.gitkeep
+!backend/storage/reports/.gitkeep
+*.db
+
+# Misc
+.DS_Store
